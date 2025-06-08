@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+</head>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2:hover {
+            color: blue;
+        }
+
+        body {
+            font-family: Arial,  sans-serif;
+            line-height: 1.5;
+        }
+
+        nav {
+            background-color: #817676;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 15px;
+        }
+
+        .profile-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-photo {
+            flex-shrink: 0;
+            width: 150px; 
+            height: auto;
+        }
+
+        section.profile-container {
+            padding: 20px;
+        }
+
+        footer {
+            position: relative;
+            background-color: #f4f4f4;
+            padding: 20px 40px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        footer .logo {
+            width: 40px;
+            height: auto;
+        }
+
+        footer .footer-text {
+            text-align: right;
+            font-size: 12px;
+            line-height: 1.2;
+            color: black;
+            min-width: 150px;
+        }
+
+        footer img {
+            width: 100px;
+        }
+
+        footer .footer-text .year {
+            font-weight: none;
+            font-size: 12px;
+        }
+
+        footer hr {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border: 1px solid black;
+            margin: 0;
+        }
+
+         @media (max-width: 500px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .profile-photo {
+                width: 100%;
+                max-width: 30px;
+                margin-top: 15px;
+            }
+            footer {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            footer > .footer-text {
+                text-align: center;
+                min-width: auto;
+            }
+        }
+    </style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="profile-container">
+            <div class="profile-text">
+                <h2>My profile</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <td>nama</td>
+                            <td>:</td>
+                            <td>Sandrina</td>
+                        </tr>
+                        <tr>
+                            <td>Bio / Deskripsi</td>
+                            <td>:</td>
+                            <td>Isi dari Deskripsi</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <img src="./assets/img/foto.jpeg" alt="Foto Sandrina" class="profile-photo" />
+        </section>
+    </main> 
+
+    <footer class="footer-text">
+        <hr>
+        <img src="./assets/img/golden-logo-template-free-png.webp" alt="Logo Instagram" class="logo" />
+        <div class="footer-text">
+            <div class="year">@ 2025 website portofolio</div>
+            <div>Semua Hak Dilindungi</div>
+        </div>
+    </footer>
+</body>
+</html>
